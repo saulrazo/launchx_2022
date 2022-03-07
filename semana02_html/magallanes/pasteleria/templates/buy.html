@@ -1,0 +1,27 @@
+{%extends 'layout.html'%}
+{% load static %}        
+{% block content %}
+
+     <section class="buy-form">
+         <form class="form-buy" action="#">
+            <h3>INGRESA LOS REQUERIMIENTOS</h3>
+             <input class="norm" type="text" placeholder="Nombre"><br><br>
+             <input class="norm" type="tel" placeholder="Número celular"><br><br>
+             <input class="norm" type="email" placeholder="Correo electrónico"><br><br>
+             <input class="norm" type="text" placeholder="Descripción"><br><br>
+             <h4>SABORES DISPONIBLES</h4>
+             <label ><input class="check" type="checkbox">Vainilla</label><br><br>
+             <label ><input class="check" type="checkbox">Chocolate</label><br><br>
+             <label ><input class="check" type="checkbox">Fresa</label><br><br>
+             <label ><input class="check" type="checkbox">Zanahoria</label><br><br>
+             <h4>DECORACIONES DISPONIBLES</h4>
+             <label ><input class="check" type="checkbox">Frutos rojos</label><br><br>
+             <label ><input class="check" type="checkbox">Chocolate blanco</label><br><br>
+             
+             <input class="oper" type="reset">
+             <input class="oper" type="submit">
+         </form>
+
+     </section>
+
+{% endblock content %}

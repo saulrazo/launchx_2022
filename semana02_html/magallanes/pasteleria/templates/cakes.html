@@ -1,0 +1,57 @@
+{%extends 'layout.html'%}
+{% load static %}        
+{% block content %}
+     <h1 class="cake-title"> Sabores disponibles</h1>
+     <ul>
+         <section class="pasteles-list">
+             <div>
+                <li><b>Vainilla</b></li>
+                <li><img src="{% static 'img/sabores/sabor1.jpeg' %}" alt="" width="300" height="300"></li>
+             </div>
+
+             <div>
+                <li><b>Chocolate</b></li>
+                <li><img src="{% static 'img/sabores/sabor2.webp' %}" alt="" width="300" height="300"></li>
+             </div>
+
+             <div>
+                <li><b>Fresa</b></li>
+                <li><img src="{% static 'img/sabores/sabor3.jpeg' %}" alt="" width="300" height="300"></li>
+             </div>
+
+             <div>
+                <li><b>Zanahoria</b></li>
+                <li><img src="{% static 'img/sabores/sabor4.jpeg' %}" alt="" width="300" height="300"></li>
+             </div>
+
+             <div>
+                <li><b>Fresa</b></li>
+                <li><img src="{% static 'img/sabores/sabor3.jpeg' %}" alt="" width="300" height="300"></li>
+             </div>
+
+             <div>
+                <li><b>Zanahoria</b></li>
+                <li><img src="{% static 'img/sabores/sabor4.jpeg' %}" alt="" width="300" height="300"></li>
+             </div>
+
+             
+            
+            </section>
+     </ul>
+
+     <h1 class="deco-title"> Decoraciones disponibles</h1>
+     <ul>
+         <section class="pasteles-list">
+             <div>
+                <li><b>Frutos rojos</b></li>
+                <li><img src="{% static 'img/decoraciones/deco1.jpeg' %}" alt="" width="300" height="300"></li>
+             </div>
+
+             <div>
+                <li><b>Chocolate blanco</b></li>
+                <li><img src="{% static 'img/decoraciones/deco2.jpeg' %}" alt="" width="300" height="300"></li>
+             </div>
+    
+            </section>
+     </ul>
+{% endblock content %}

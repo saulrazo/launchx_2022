@@ -1,0 +1,19 @@
+{%extends 'layout.html'%}
+{% load static %}        
+{% block content %}
+
+    <section class="main-data">
+        <div class="main-img">
+            <img src="{% static 'img/cakeimg.png' %}" alt="" width="600" height="500">
+        </div>
+
+        <div class="main-text">
+            <div class="jtext">
+                <b>Tradición</b><p>que llega al corazón</p> 
+            </div>
+            <button id="index-button" type="button" class="btn btn-primary btn-lg" onclick="window.location.href='{% url 'comprar' %}'">Realizar pedido</button>
+        </div>
+
+    </section>
+
+{% endblock content %}
