@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans:wght@300;600&display=swap');
+
+:root{
+    --main:#1F50E6;
+    --sec:#737476;
+    --ter:#303053;
+    --white:#ffffff;
+    --gray:#C1C6FF;
+    --yellow:#FFE43F;
+    --yellow-icon:#FEF9DD;
+    --blue-icon:#e8ebf7;
+}
+
+*{
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+    right: 0;
+    list-style: none;
+}
+
+/*ICONS*/
+.in{
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    background-color: var(--yellow-icon);
+    border-radius: 5px;
+}
+
+.icn{
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    background-color: var(--blue-icon);
+    border-radius: 5px;
+}
+
+.icon-img{
+    margin-bottom:4.5px;
+}
+
+.icon li{
+    display: inline-block;
+}
+
+.icon .text{
+    width: 150px;
+    height: 25px;
+    font-weight: bold;
+    font-size:15px;
+    color: var(--sec);
+  
+}
+
+
+/*NAVBAR*/
+.nav-bar{
+    top: 0;
+
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1,100px); 
+    width: 100%;
+
+}
+
+.nav-bar .vac-title, .nav-items ul{
+    margin-top: 25px;
+}
+
+
+.nav-bar .vac-title a{
+    padding-left: 70px;
+    color: var(--main);
+    font-size: 30px;
+}
+
+.nav-items li{
+    padding-left: 30px;
+    text-decoration: none;
+    display: inline-block;  
+}
+
+.nav-items li a{
+    font-family:'Poppins', sans-serif;;
+    font-weight: bold;
+    color: var(--sec);
+}
+
+ .hoax-button{
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: var(--main);
+    color: var(--white);
+    font-size: 15px;
+    width: 140px;
+    height: 45px;
+    box-shadow: 2px 2px 5px var(--main);
+}
+
+/*FIRST VIEW  --FIGHT VIRUS WITH VACCINES--*/
+
+.fight-virus{
+    background-image: url(./img/vaccine_templ.png);
+    background-repeat: no-repeat;
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1,690px);
+
+}
+
+.fight-virus .fight-data{
+    margin-left: 95px;
+    margin-top: 100px;
+
+}
+
+.fight-virus .fight-data h2{
+    font-size: 50px;
+    color: var(--ter);
+
+}
+
+.fight-virus .fight-data p{
+    color: var(--sec);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.fight-virus .fight-img{
+    margin-left: 95px;
+}
+
+.icons-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1,150px);
+
+}
+
+
+
+/* --POPUP DATA-- */
+.pop-data{
+    position: absolute;
+    border-radius: 10px;
+    background-color: var(--white);
+    opacity: 0.9;
+    box-shadow: 2px 2px 5px var(--blue-icon);
+    width: 800px;
+    height: 100px;
+    bottom: 50px;
+    left: 250px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1,150px);
+}
+
+
+
+/*VACCINES NAMES*/
+.vaccine-name{
+    margin-top: 150px;
+    text-align: center;
+}
+
+/*WHY SHOULD I VACCINE*/
+.i-vaccine{
+    background-image: url(./img/three_vaccine_templ.png);
+    background-repeat: no-repeat;
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2,345px);
+}
+
+.i-vaccine .data-items ul .items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+
+}
+.i-vaccine .main-text{
+    margin-left: 50px;
+}
+
+.i-vaccine .main-text h2{
+    font-size: 40px;
+    color:var(--ter);
+}
+
+.i-vaccine .main-text p{
+    color: var(--sec);
+    font-size: 20px;
+
+}
+
+.items h4{
+    font-size: 25px;
+    color: var(--ter);
+}
+
+.items p{
+    color: var(--sec);
+}
+
+
+.items .minimize, .forming, .protecting, .creating{
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px var(--blue-icon);
+    border-color: var(--main);
+    padding: 10px;
+}
+
+.items .icons3{
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    background-color: var(--blue-icon);
+    border-radius: 5px;
+}
+
+.items .ic-img{
+    margin-top: 10px;
+}
+
+
+/*PREPARATIOSN BEFORE VACCINE*/
+
+.before-vaccine{
+    background-image: url(./img/two_vaccine_templ.png);
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1,690px);
+
+
+}
+
+.before-data h2{
+    font-size: 40px;
+    color: var(--ter);
+}
+
+.before-data p{
+    font-size: 20px;
+    color: var(--sec);
+    margin-bottom: 40px;
+}
+
+
+
+
+.before-data .avoid,.stress,.food,.sleep,.activity{
+    width: 600px;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px var(--blue-icon);
+    margin-bottom: 15px;
+    padding-top: 13px;
+    padding-left:10px;
+    font-size: 15px;
+}
+
+
+
+/*EMERGENCY CONTACT*/
+
+.emergency-contact{
+    background-image: url(./img/three_vaccine_templ.png);
+    background-repeat: no-repeat;
+}
+
+.emergency-contact{
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1,690px);
+
+}
+
+.emergency-contact .emergency-data{
+    margin-left: 45px;
+}
+
+.emergency-contact .emergency-data h4{
+    font-size: 30px;
+    color: var(--ter);
+
+}
+
+.emergency-contact .emergency-data p{
+    font-size: 20px;
+    color:var(--sec);
+
+}
+
+.emergency-contact .emergency-data .services{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,200px);
+    grid-gap:50px;
+
+}
+
+.emergency-contact .emergency-data .services li{
+    width: 220px;
+    height: 220px;
+    padding-top: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 5px var(--blue-icon);
+    border-radius: 15px;
+    
+}
+
+.emergency-contact .emergency-img{
+    margin-left: 100px;
+}
+
+/*DATA FOOTER*/
+
+.vaccination{
+    background-image: url(./img/four_vaccine_templ\ .png);
+    background-repeat: no-repeat;
+
+}
+
+.vaccination .maind .main-vac{
+    margin-left: 100px;
+}
+
+.vaccination .maind .main-vac h3{
+    color: var(--main);
+    font-size: 30px;
+}
+.vaccination .maind .main-vac p{
+    color: var(--sec);
+    font-size: 15px;
+}
+
+.vaccination .maind .data-lists h3{
+    color: var(--ter);
+    font-size: 25px;
+}
+
+.vaccination .maind .data-lists h5{
+    color:var(--sec);
+    font-size: 15px;
+    font-weight: lighter;
+
+}
+
+.vaccination .maind{
+    margin-top: 250px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1,250px);
+
+
+}
+
+.vaccination .maind .data-lists{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1,100px);
+
+}
+
+.vaccination .rights{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1,50px);
+    margin-left: 100px;
+    color: var(--sec);
+    font-weight: 700;
+
+}
+
+
