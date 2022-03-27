@@ -14,11 +14,10 @@ const poke2 = document.getElementById('poke2');
 const pokeEvo = document.getElementById('pokeEvo');
 
 
-const getPokemonData = (pokemon) => {
+const pokeData = (pokemon) => {
     fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
         .then((response) => response.json())
         .then((data) => {
-            let id = ('00' + data.id).slice(-3);
             pokeName.innerHTML = data.name;
             pokeImage.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data.id}.png`;
             pokeID.innerHTML = `ID ${data.id}`;
@@ -32,5 +31,5 @@ const getPokemonData = (pokemon) => {
         });
 }
 
-searchButton.addEventListener('click', () => getPokemonData(dataInput.value));
-resetButton.addEventListener('click', () => getPokemonData(dataInput.value));
+searchButton.addEventListener('click', () => pokeData(dataInput.value));
+resetButton.addEventListener('click', () => pokeData(dataInput.value));
