@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./img/icon_logo.png.opdownload">
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Pokedex</title>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./img/pokelogo.png" alt="" width="140" height="60">
+          </a>
+        </div>
+      </nav>
+
+      <section class="pokedex">
+
+          <!--Pokemons names & images-->
+          <section class="main-screen">
+              <section class="data-show">
+                  <div class="pokemon-name">
+                      <h1 id="pokeName"></h1>
+                  </div>
+                  <div class="pokemon-img">
+                      <img src="./img/pokeball.png" id="pokeImage" alt="" width="230" height="230">
+                  </div>
+
+              </section>
+
+              <section class="data-search">
+                  <input type="text"  id="dataSearch" placeholder="Pokemon | ID Pokemon">
+                  <button type="submit" id="searchButton" class="submitb">Search</button>
+                  <button type="reset" id="resetButton" class="resetb">Reset</button>
+              </section>
+
+          </section>
+
+          <!--Pokemons attributes-->
+          <section class="sec-screen">
+
+              <div class="atributes">
+                <ul>
+                    <li id="pokeID">ID</li>
+                    <li id="pokeWeight">WEIGHT</li>
+                    <li id="pokeHeight">HEIGHT</li>
+                    <li id="pokeType">TYPE</li>
+                    <li id="poke1">MOV 01</li>
+                    <li id="poke2">MOV 02</li>
+                    <li id="pokeEvo">EVO</li>
+                </ul>
+              </div>
+
+          </section>
+
+      </section>
+
+      <div class="rectangle"></div>
+      <div class="triangle"></div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+
+<script src="app.js"></script>
+</html>

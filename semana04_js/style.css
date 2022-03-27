@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+:root{
+    --main:#F84F37;
+    --sec:#00F5D7;
+    --ter:#727675;
+}
+
+
+*{
+    font-family: 'Righteous', cursive;
+    list-style: none;
+    text-decoration: none;
+}
+
+.pokedex{
+    margin-left: 300px;
+    background-color: var(--main);
+    border-radius: 20px;
+    width: 820px;
+    height: 600px;
+    margin-top: 50px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1,600px); 
+    
+
+}
+
+.main-screen{
+    text-align: center;
+    margin: 40px;
+    height: 100%;
+    width: 40%;
+}
+
+.main-screen .data-show{
+    color: var(--ter);
+    border-radius: 15px;
+    border: 10px solid var(--ter);
+    background-color: white;
+    margin-bottom: 10px;
+    height: 70%;
+    width: 350px;
+    padding-top:30px;
+
+}
+
+.main-screen .data-show .pokemon-name{
+    margin-bottom: 50px;
+}
+
+.main-screen .data-search{
+    width: 350px;
+}
+
+.main-screen .data-search input{
+    width: 350px;
+    border-radius: 10px;
+    color: var(--ter);
+    border: 5px solid var(--ter);
+    font-size: 25px;
+    text-align: center;
+}
+
+.main-screen .data-search .submitb, .resetb{
+    margin-top: 20px;
+    border-radius: 10px;
+    border-color: var(--main);
+    color: white;
+    background-color: var(--sec);
+    width: 170px;
+    font-size: 20px;
+}
+
+.sec-screen .atributes{
+    margin-top: 100px;
+    border-radius: 15px;
+    background-color:var(--sec);
+    width: 350px;
+    height: 450px;
+    padding-top: 30px;
+    font-size: 20px;
+    border: 5px solid var(--ter);
+    
+}
+
+.rectangle{
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    background-color: white;
+    top: 135px;
+    right: 275px;
+}
