@@ -13,7 +13,6 @@ const poke1 = document.getElementById('poke1');
 const poke2 = document.getElementById('poke2');
 const pokeEvo = document.getElementById('pokeEvo');
 
-
 const pokeData = (pokemon) => {
     fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
         .then((response) => response.json())
@@ -31,5 +30,5 @@ const pokeData = (pokemon) => {
         });
 }
 
-searchButton.addEventListener('click', () => pokeData(dataInput.value));
+searchButton.addEventListener('click', () => pokeData(dataInput.value.toLowerCase()));
 resetButton.addEventListener('click', () => pokeData(dataInput.value));
